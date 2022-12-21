@@ -1,0 +1,24 @@
+DBMS - MySQL
+
+database design:--- There are two tables created ,First one is accounts and Second is transaction
+
+	database name -- banking
+
+	table:accounts
+		>> account_no int primary key auto_increment,
+        	>> name varchar(20),
+        	>> password varchar(20),
+        	>> phone varchar(15),
+        	>> email varchar(30),
+        	>> adhar varchar(16),
+        	>> balance float,
+        	>> account_type varchar(15),
+        	>> account_opn_date varchar(35)
+			
+
+	table:txn
+		>> account_no int,
+		>> ammount float,
+		>> transaction_type varchar(15),
+		>> date varchar(40),
+		>> updated_bal float
